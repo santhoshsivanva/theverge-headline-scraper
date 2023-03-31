@@ -51,8 +51,7 @@ class TheVergeSpider(Spider):
         return date_str + '_verge.csv'
 
     def insert_headerSection(self, response):
-        baseURL = "https://www.theverge.com/"
-
+        
         div_tags = response.css(
             'div[class*="relative border-b border-gray-31 pb-20 md:pl-80 lg:border-none lg:pl-[165px] -mt-20 sm:-mt-40"]')
 
