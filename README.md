@@ -6,12 +6,6 @@ The script is designed to be run on a cloud service like AWS and can be set up w
 http://ec2-3-15-146-152.us-east-2.compute.amazonaws.com/
 
 ## Setup
-Clone this repository using git clone https://github.com/santhoshsivanva/theverge-headline-scraper.git
-
-Install the required packages using pip install -r requirements.txt
-
-Run the script using python3 scrape.py
-
 ```bash
 git clone https://github.com/santhoshsivanva/theverge-headline-scraper.git
 cd theverge
