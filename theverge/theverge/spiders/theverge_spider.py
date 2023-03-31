@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from scrapy.selector import Selector
 from theverge.settings import CHROMEDRIVER_PATH, THEVERGE_URL
 import os
+import datetime
 
 
 class TheVergeSpider(Spider):
@@ -45,10 +46,9 @@ class TheVergeSpider(Spider):
     
     @classmethod
     def find_DMY(self):
-        DMY = date.today()
-        splited = [i for i in str(DMY).split('-')]
-        splited.reverse()
-        return ''.join(splited)+'_verge.csv'
+        today = datetime.date.today()
+        date_str = today.strftime('%d%m%Y')
+        return date_str + '_verge.csv'
 
     def insert_headerSection(self, response):
         baseURL = "https://www.theverge.com/"
