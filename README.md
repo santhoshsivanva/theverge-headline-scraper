@@ -22,6 +22,13 @@ To automate the script to run daily, set up a cronjob in the server with the fol
 ```bash
 0 0 * * * TZ=Asia/Kolkata /usr/bin/python3 /home/ubuntu/theverge/run.py
 ```
+##Requirements:
+Chrome Web Driver with supportive chrome browser version
+(Download here) https://chromedriver.chromium.org/downloads
+Python 3.7 or higher
+scrapy
+selenium
+SQLite 3
 
 This will run the script at midnight every day.
 
